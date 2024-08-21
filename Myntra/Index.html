@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra | online shopping for Men, Women, Kids, living and studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="https://www.visa.com/images/merchantoffers/2022-05/1653640344835.myntra1.png" >
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="items.css">
+</head>
+
+<body>
+<header>
+    <div class="head-container">
+        <div class="img-container">
+          <a href="https://www.myntra.com/"><img src="https://www.visa.com/images/merchantoffers/2022-05/1653640344835.myntra1.png" alt="Myntra" width="50"></a>
+        </div>
+        <div class="nav-container">
+            <a href="#">MEN</a>
+            <a href="#">WOMEN</a>
+            <a href="#">KIDS</a>
+            <a href="#">HOME & LIVING</a>
+            <a href="#">BEAUTY</a>
+            <a href="#">STUDIO</a>
+        </div>
+        <div class="search-bar-container">
+            <button type="submit" id="searchBtn"><i class="fa fa-search"></i></button>
+            <input id="searchInput" type="text" placeholder="Search for products, brands and more..">
+
+        </div>
+        <div class="user-control-container">
+            <a href="#"><i class="fa fa-user"><br>Profile</i></a>
+            <a href="#"><i class="fa fa-heart"><br> Wishlist</i></a>
+            <a href="bagpage.html"><i class="fa fa-shopping-bag"><br>Bag</i><span class="bag-item-count">0</span></a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="items-container">
+    </div>
+</main>
+
+    <script>
+
+        let btn = document.getElementById('searchBtn');
+        console.log(btn);
+
+        const searchInput = document.getElementById('searchInput')
+
+        searchInput.addEventListener('focus', changeBgColor)
+
+        function changeBgColor(e) {
+            btn.style.cssText= 'background-color:#ffff; border-width: 1px 0px 1px 1px; border-color:lightgrey; border-style: solid;'
+                       
+        };
+
+        searchInput.addEventListener('blur', function() {
+            btn.style.cssText= 'background-color:#f0f1f0;'
+            
+        })
+
+       
+
+        
+    </script>
+    <script src="Script/items.js"></script>
+    <script src="Script/index.js"></script>
+
+
+</body>
+</html>
